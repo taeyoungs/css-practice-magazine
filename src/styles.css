@@ -20,6 +20,13 @@ body {
   max-width: 1400px;
 }
 
+a {
+  color: var(--deepDarkGrey);
+  &:hover {
+    color: rgba(0, 0, 0, 0.5);
+  }
+}
+
 .header {
   margin-bottom: 50px;
 }
@@ -103,6 +110,7 @@ body {
   width: 100%;
   max-width: 300px;
   & span {
+    color: var(--darkGrey);
     font-size: 18px;
   }
 }
