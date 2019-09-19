@@ -1,0 +1,133 @@
+/* title font : Oswald, content font : Exo*/
+@import url('https://fonts.googleapis.com/css?family=Oswald|Exo|Fjalla+One&display=swap');
+
+:root {
+  --deepDarkGrey: #3d3d3d;
+  --darkGrey: #4b4b4b;
+  --cherryBlossoms: #ffb8b8;
+  --lightBlossoms: #ffcccc;
+  --borderColor: #1dd1a1;
+}
+
+html,
+body {
+  height: 100%;
+}
+
+body {
+  margin: 0 auto;
+  width: 100%;
+  max-width: 1400px;
+}
+
+.header {
+  margin-bottom: 50px;
+}
+
+.threeGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 350px);
+  grid-auto-rows: 200px;
+  grid-gap: 25px;
+  font-family: 'Exo';
+  justify-content: space-around;
+  & .header__icon {
+    align-self: center;
+    & img {
+      width: 100px;
+    }
+  }
+  & .header__nav {
+    justify-self: flex-end;
+    width: 100%;
+  }
+}
+
+.header__column {
+  display: flex;
+  & li {
+    display: flex;
+    border-right: 1px solid black;
+    border-bottom: 1px solid black;
+    font-size: 18px;
+    padding: 16px;
+    width: 100%;
+    justify-content: space-between;
+    & i {
+      cursor: pointer;
+      font-size: 22px;
+      &:hover {
+        color: rgba(0, 0, 0, 0.5);
+      }
+    }
+    & i:not(:first-child) {
+      margin-left: 17px;
+    }
+  }
+  & li:not(:nth-child(2)) {
+    border-left: 1px solid black;
+  }
+}
+
+.mainGrid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: 560px;
+  grid-gap: 33px;
+}
+
+.grid__item:first-child {
+  grid-area: 1 / span 3;
+  background-image: url(https://images.unsplash.com/photo-1545315171-cc80c905c252?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=967&q=80);
+  background-position: center;
+  background-size: cover;
+  border: 10px solid var(--borderColor);
+  & .item__wrapper {
+    display: grid;
+    grid-template-rows: 2fr 1fr 3fr;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.item:first-child {
+  background-color: white;
+  opacity: 0.8;
+  color: var(--deepDarkGrey);
+  font-size: 40pt;
+  font-family: 'Fjalla One';
+  text-transform: uppercase;
+  justify-self: flex-end;
+  margin: 5px 5px 5px 0;
+  padding: 30px;
+  width: 100%;
+  max-width: 300px;
+  & span {
+    font-size: 18px;
+  }
+}
+.item:nth-child(2) {
+  background-color: white;
+  opacity: 0.8;
+  color: var(--deepDarkGrey);
+  justify-self: flex-end;
+  font-family: 'Exo';
+  font-size: 15pt;
+  text-decoration: underline;
+  width: 100%;
+  max-width: 300px;
+  padding: 30px;
+  margin-right: 5px;
+}
+.item:nth-child(3) {
+  align-self: flex-end;
+  padding-left: 30px;
+  padding-bottom: 35px;
+}
+
+/*
+뒤에 추가로
+1. onlyText
+2. halfPhoto
+3. onlyPhoto
+*/
