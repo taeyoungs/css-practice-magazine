@@ -1,6 +1,6 @@
 # css-practice-magazine
 css-master practice No.2
 
-# 19.09.19 Check
+# 19.09.20 Check
 
-<img src="./19-09-19 check.png">
+<img src="./19-09-20 check.png">
