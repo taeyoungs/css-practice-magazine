@@ -79,7 +79,7 @@ a {
 .mainGrid {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-auto-rows: 560px;
+  grid-auto-rows: 600px;
   grid-gap: 33px;
 }
 
@@ -134,8 +134,96 @@ a {
 }
 
 /*
-뒤에 추가로
+TO DO
 1. onlyText
 2. halfPhoto
 3. onlyPhoto
 */
+
+/*onlyText*/
+.grid__item__onlyText {
+  display: grid;
+  grid-template-rows: 4fr 0.7fr;
+  & .grid__item__column {
+    border: 2px solid #95a5a6;
+    padding: 40px;
+  }
+}
+
+.grid__item__halfPhoto {
+  display: grid;
+  grid-template-rows: minmax(240px, 2fr) 2fr 0.7fr;
+  & .grid__item__column {
+    border: 2px solid #95a5a6;
+    padding: 40px;
+  }
+  & .grid__item__column:first-child {
+    background-position: center;
+    background-size: cover;
+  }
+  & .grid__item__column:nth-child(2) {
+    border-top: 0px;
+    & .item__title {
+      margin-bottom: 0;
+      & span {
+        font-family: 'Exo';
+        color: gray;
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+.grid__item__onlyPhoto {
+  display: grid;
+  grid-template-rows: 4fr 0.7fr;
+  & .grid__item__column {
+    border: 2px solid #95a5a6;
+    padding: 40px;
+  }
+  & .grid__item__column:first-child {
+    padding: 7px;
+    & .bgImage {
+      width: 100%;
+      height: 100%;
+      background-position: center;
+      background-size: cover;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      & div {
+        z-index: 10;
+        background-color: white;
+        opacity: 0.7;
+        font-size: 28pt;
+        font-family: 'Fjalla One';
+        text-transform: uppercase;
+        margin-top: 200px;
+        padding: 30px 65px;
+      }
+    }
+  }
+}
+
+.grid__item__column:last-child {
+  border-top: 0px;
+  font-size: 22px;
+  font-family: 'Exo';
+  text-decoration: underline;
+  color: var(--darkGrey);
+  padding: 30px;
+}
+
+.item__title {
+  font-family: 'Fjalla One';
+  text-transform: uppercase;
+  font-size: 35pt;
+  margin-bottom: 30px;
+}
+
+.item__content {
+  font-family: 'Exo';
+  font-size: 22px;
+  color: gray;
+  line-height: 35px;
+}
