@@ -1,4 +1,4 @@
-# css-practice-magazine
+# css-practice-projects
 css-master practice No.2
 
 # 19.09.20 Check
