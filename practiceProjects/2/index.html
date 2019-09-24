@@ -6,6 +6,12 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="stylesheet" href="./style.css" />
     <link rel="stylesheet" href="../../src/reset.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.2/css/all.css"
+      integrity="sha256-piqEf7Ap7CMps8krDQsSOTZgF+MU/0MPyPW2enj5I40="
+      crossorigin="anonymous"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -40,7 +46,7 @@
         </li>
       </ul>
     </div>
-    
+
     <section class="featured">
       <h2 class="featured__title">Featured meals</h2>
       <div class="featured__wrapper">
@@ -57,17 +63,52 @@
           <button class="featured-item__button">➕</button>
         </article>
         <article class="featuerd-item">
-          <h4 class="featured-item__title">Pizza for High-End Italian Restaurant</h4>
+          <h4 class="featured-item__title">
+            Pizza for High-End Italian Restaurant
+          </h4>
           <button class="featured-item__button">➕</button>
         </article>
+      </div>
     </section>
 
     <section class="food-recipe">
-        <ul class="food-recipe__list">
-            <li class="food-recipe__item">Fettuccine alfredo</li>
-            <li class="food-recipe__item"></li>
-            <li class="food-recipe__item"></li>
-        </ul>
+      <ul class="food-recipe__list">
+        <li class="food-recipe__item">
+          <span class="item__text">Fettuccine alfredo</span>
+          <span class="item__icon">+</span>
+        </li>
+        <li class="food-recipe__item">
+          <span class="item__text">Mexican chicken burger</span>
+          <span class="item__icon">+</span>
+        </li>
+        <li class="food-recipe__item">
+          <span class="item__text">Classic Italian lasagne</span>
+          <span class="item__icon">+</span>
+        </li>
+      </ul>
     </section>
+
+    <footer>
+      <div class="footer__navigation">
+        <div class="footer__item">
+          <span class="footer__item__icon">
+            <i class="far fa-eye"></i>
+          </span>
+          <span class="footer__item__title">Explore</span>
+        </div>
+        <div class="footer__item">
+          <span class="footer__item__icon">
+            <i class="fas fa-utensils"></i>
+          </span>
+          <span class="footer__item__title">Meals</span>
+        </div>
+        <div class="footer__item">
+          <span class="footer__item__icon">
+            <i class="fas fa-shopping-basket"></i>
+          </span>
+          <span class="footer__item__title">Shopping</span>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>
