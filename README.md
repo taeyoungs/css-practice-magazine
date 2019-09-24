@@ -7,5 +7,7 @@ css-master practice No.2
 
 # 19.09.24 Check
 
+* https://codesandbox.io/s/funny-fermi-6crmu
+
 <img src="./19-09-24 check.png">
 
