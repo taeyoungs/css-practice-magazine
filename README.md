@@ -1,13 +1,18 @@
 # css-practice-projects
-css-master practice No.2
+css-master practice project list
 
-# 19.09.20 Check
+# Magazine - 19.09.20 Check
 
 <img src="./19-09-20 check.png">
 
-# 19.09.24 Check
+# Meals App - 19.09.24 Check
 
 * https://codesandbox.io/s/funny-fermi-6crmu
 
 <img src="./19-09-24 check.png">
 
+# Architecture Website - 19.09.25 Check
+
+* https://codesandbox.io/s/pensive-cherry-quf3z
+
+<img src="./19-09-25 check.png">

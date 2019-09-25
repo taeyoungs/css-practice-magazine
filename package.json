@@ -15,7 +15,7 @@
   },
   "homepage": "https://github.com/taeyoungs/css-practice-projects#readme",
   "scripts": {
-    "start": "parcel practiceProjects/2/index.html"
+    "start": "parcel practiceProjects/3/index.html"
   },
   "dependencies": {
     "postcss-color-mod-function": "^3.0.3",
