@@ -16,3 +16,9 @@ css-master practice project list
 * https://codesandbox.io/s/pensive-cherry-quf3z
 
 <img src="./19-09-25 check.png">
+
+# Artistic Blog Website - 19.10.03 Check
+
+* https://codesandbox.io/s/stupefied-borg-8forf
+
+<img src="./19-10-03 check.png">

@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css?family=Cousine|Special+Elite&display=swap');
+
+:root {
+  --bgColor: #202020;
+}
+
+body {
+  height: 100vh;
+  display: grid;
+  background-color: var(--bgColor);
+  grid-template-rows: 1fr 3.5fr 4fr;
+  background-image: url('./bg.jpg');
+  background-size: 50%;
+  background-repeat: no-repeat;
+  background-position: top right -15%;
+}
+
+.header__wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 40px 60px;
+  font-size: 20px;
+  color: white;
+}
+
+.header__wrapper .header__logo {
+  text-transform: uppercase;
+  font-family: 'Special Elite';
+}
+
+.gallery {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1.5fr 1fr;
+  margin-left: 100px;
+}
+
+.gallery__column:first-child {
+  display: grid;
+  justify-content: center;
+  grid-template-columns: repeat(2, 1fr);
+  /* background-color: rgba(255, 255, 255, 0.2); */
+}
+
+.gallery .gallery__item {
+  margin: 30px 40px;
+  display: flex;
+  flex-direction: column-reverse;
+  font-family: 'Cousine';
+  border: 10px solid rgba(255, 255, 255, 0.2);
+}
+
+.gallery__item:first-child {
+  background-image: url('https://images.unsplash.com/photo-1499623838158-29acea518eaa?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1400&q=80');
+  background-position: center;
+  background-size: cover;
+}
+
+.gallery__item:last-child {
+  background-image: url('https://images.unsplash.com/photo-1473269486199-2d4465ea0419?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1489&q=80');
+  background-position: center;
+  background-size: cover;
+}
+
+.item__wrapper {
+  border: 1px solid white;
+  margin: 30px 80px;
+}
+
+.item__content {
+  padding: 40px 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+  margin: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.item__content span:first-child {
+  font-weight: 600;
+  margin-bottom: 7px;
+  font-size: 20px;
+}
+
+.content {
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.7fr;
+  margin: 35px 100px 0 140px;
+}
+
+.content__column .content__title {
+  font-size: 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+  color: white;
+  margin-bottom: 20px;
+}
+
+.content__column .detail__list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr) 2fr;
+  font-family: 'Cousine';
+  margin-bottom: 20px;
+}
+
+.list__item {
+  padding: 20px 20px 20px 5px;
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.list__item .item__title {
+  font-size: 16px;
+  font-weight: 600;
+  color: black;
+}
+
+.list__item .item__value {
+  font-size: 13px;
+}
+
+.content__description {
+  padding: 10px 20px 20px 5px;
+  margin-bottom: 10px;
+  margin-right: 70px;
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 18px;
+  font-family: 'Cousine';
+}
+
+.content__description:first-child {
+  font-size: 15px;
+}
+
+.content__description:first-child div {
+  font-size: 20px;
+  margin-bottom: 5px;
+}
+
+.content__link {
+  color: #feca57;
+  text-decoration: none;
+  font-family: 'Special Elite';
+}
